@@ -28,6 +28,16 @@ I'm a student. I make compilers and software in my spare time. I have a fictiona
 
 - [xp3-parser](https://github.com/Myriad-Dreamin/xp3-parser), Go: decode kirikiri xp3 file into files.
 
+## Favorite Albums
+
+If you have code problems, please don't discuss with me. If you love music, please do.
+
+<!-- begin-fav-albums -->
+|[Lilium Records - Lilium XX](https://lilium.bandcamp.com/album/lilium-xx)|[And More](./Albums.md)|
+|:-:|:-:|
+|<img src="https://f4.bcbits.com/img/a0518881155_16.jpg" alt="Lilium Records - Lilium XX" width="320">|[And More](./Albums.md)|
+<!-- end-fav-albums -->
+
 ## Buy me a coffee
 
 Buy me a coffee on Unifans: https://app.unifans.io/c/camiyoru
