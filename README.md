@@ -33,9 +33,9 @@ I'm a student. I make compilers and software in my spare time. I have a fictiona
 If you have code problems, please don't discuss with me. If you love music, please do.
 
 <!-- begin-fav-albums -->
-|[Lilium Records - Lilium XX](https://lilium.bandcamp.com/album/lilium-xx)|[And More](./Albums.md)|
+|[callasoiled - Machine Flex](https://callasoiled.bandcamp.com/album/machine-flex)|[And More](./Albums.md)|
 |:-:|:-:|
-|<img src="https://f4.bcbits.com/img/a0518881155_16.jpg" alt="Lilium Records - Lilium XX" width="320">|[And More](./Albums.md)|
+|<img src="https://f4.bcbits.com/img/a0883869126_16.jpg" alt="callasoiled - Machine Flex" width="640">|[And More](./Albums.md)|
 <!-- end-fav-albums -->
 
 ## Buy me a coffee

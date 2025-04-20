@@ -14,7 +14,7 @@ const albums = JSON.parse(execSync(
 const updateReadme = () => {
     const albumTitles = [albums[0]].map(album => `[${album.title}](${album.link})`).join('|');
     const albumAlignments = [albums[0]].map(_album => ":-:").join('|');
-    const albumCovers = [albums[0]].map(album => `<img src="${album.cover}" alt="${album.title}" width="320">`).join('|');
+    const albumCovers = [albums[0]].map(album => `<img src="${album.cover}" alt="${album.title}" width="640">`).join('|');
 
     const table = `|${albumTitles}|[And More](./Albums.md)|\n|${albumAlignments}|:-:|\n|${albumCovers}|[And More](./Albums.md)|`;
 
@@ -26,7 +26,7 @@ const updateReadme = () => {
 
 const updateAlbums = () => {
     const albumTitles = albums.map(album => `|[${album.title}](${album.link})|`);
-    const albumCovers = albums.map(album => `|<img src="${album.cover}" alt="${album.title}" width="320">|`);
+    const albumCovers = albums.map(album => `|<img src="${album.cover}" alt="${album.title}" width="640">|`);
 
     const rows = albumTitles.map((title, idx) => [title, albumCovers[idx]]).flat();
     const table = [rows[0], '|:-:|', ...rows.slice(1)].join('\n');

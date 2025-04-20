@@ -13,9 +13,52 @@
 #show: main
 
 #album(
+  "callasoiled - Machine Flex",
+  "https://callasoiled.bandcamp.com/album/machine-flex",
+  "https://f4.bcbits.com/img/a0883869126_16.jpg",
+)
+
+#album(
+  "Lostalgic Recordings & Embers Melody - Flora",
+  "https://lostalgicrecordings.bandcamp.com/album/flora",
+  "https://f4.bcbits.com/img/a1663692280_10.jpg",
+)
+
+#album(
+  "Siren for Charlotte - 永遠",
+  "https://eneiongaku.bandcamp.com/album/eternal",
+  "https://f4.bcbits.com/img/a2523612575_16.jpg",
+)
+
+
+#album(
+  "MEGAREX - Techcore Essence",
+  "https://www.discogs.com/ja/release/30673849-Various-Techcore-Essence?srsltid=AfmBOoraazLj-vZ_NDN3fpgMsOjQwOl_s7BUJwi70hEaVpQC1u3ghCVI",
+  "https://i.discogs.com/Cfn7nB6Hri4W-k1fbcQ4GPL6k28IG92eHceB4gbzLHU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNjcz/ODQ5LTE3MTU2Njcw/NTUtMTc4OS5qcGVn.jpeg",
+)
+
+#album(
+  "Diverse System - AD:PIANO VII -Alternative-",
+  "https://diversesystem.bandcamp.com/album/ad-progressive-house-4",
+  "https://f4.bcbits.com/img/a2902101004_16.jpg",
+)
+
+#album(
   "Lilium Records - Lilium XX",
   "https://lilium.bandcamp.com/album/lilium-xx",
   "https://f4.bcbits.com/img/a0518881155_16.jpg",
+)
+
+#album(
+  "Masamune - percolation",
+  "https://masamunejp.bandcamp.com/album/percolation",
+  "https://f4.bcbits.com/img/a3835746565_16.jpg",
+)
+
+#album(
+  "Akihabara Heavy Industry Inc. - AHI Digital Compilation 01",
+  "https://ahiweb.bandcamp.com/album/ahi-digital-compilation-01",
+  "https://f4.bcbits.com/img/a4280802650_16.jpg",
 )
 
 #album(
@@ -31,15 +74,51 @@
 )
 
 #album(
+  "Sanaas - ASTEROIDER",
+  "https://sanatrium.bandcamp.com/album/asteroider",
+  "https://f4.bcbits.com/img/a2862814714_16.jpg",
+)
+
+#album(
   "Otographic Music - Otographies",
   "https://www.discogs.com/ja/release/14978164-Various-Otographies",
   "https://i.discogs.com/SZC9Kw9FWVS8GBLSrXee3vn00JKvtoFil2-m_syZtb8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTc4/MTY0LTE2MzU1Nzc1/NjktNTAwMC5qcGVn.jpeg",
 )
 
 #album(
-  "Diverse System - AD:PIANO VII -Alternative-",
+  "Fujimi Industry Records - Extraterrestrial Hardcore!!!! Vol.1",
+  "https://fujimi.bandcamp.com/album/extraterrestrial-hardcore-vol-1",
+  "https://f4.bcbits.com/img/a0436845158_16.jpg",
+)
+
+#album(
+  "Silent Science - Cotton Skies",
+  "https://silentscience.bandcamp.com/album/cotton-skies",
+  "https://f4.bcbits.com/img/a1882889212_16.jpg",
+)
+
+#album(
+  "Diverse System - AD:Progressive House 4",
   "https://diversesystem.bandcamp.com/album/ad-piano-vii-alternative",
   "https://f4.bcbits.com/img/a3184779540_16.jpg",
+)
+
+#album(
+  "Schole Records - Passage of sky",
+  "https://schole.bandcamp.com/album/passage-of-sky",
+  "https://f4.bcbits.com/img/a2829492938_10.jpg",
+)
+
+#album(
+  "Ujico* - WonderWorld",
+  "https://0101.bandcamp.com/album/wonderworld",
+  "https://f4.bcbits.com/img/a3206502269_16.jpg",
+)
+
+#album(
+  "Virgin Babylon Records - program music Ⅱ",
+  "https://virginbabylonrecords.bandcamp.com/album/program-music",
+  "https://f4.bcbits.com/img/a1707459648_10.jpg",
 )
 
 #album(
