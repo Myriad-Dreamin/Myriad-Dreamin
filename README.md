@@ -10,6 +10,8 @@ I'm a student. I make compilers and software in my spare time. I have a fictiona
 
 - [shiroa](https://github.com/Myriad-Dreamin/shiroa), Rust: shiroa is a simple tool for creating modern online books in pure typst.
 
+- [mitex](https://github.com/mitex-rs/mitex), Rust: **[LaTeX](https://www.latex-project.org/) support for [Typst](https://typst.app/), powered by [Rust](https://www.rust-lang.org/) and [WASM](https://webassembly.org/).**
+
 - [dapts](https://github.com/Myriad-Dreamin/dapts), Rust: Types of [Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol/).
 
 - [cosmo](https://github.com/Myriad-Dreamin/cosmo), Scala: Cosmo is a language replacing awful C++'s compile-time magics.
