@@ -7,7 +7,6 @@ import { typst } from "astro-typst";
 export default defineConfig({
   // Deploys to GitHub Pages
   site: "https://myriad-dreamin.github.io",
-  base: "/blog",
 
   integrations: [
     sitemap(),
