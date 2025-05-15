@@ -2,7 +2,7 @@
 #show: main.with(
   title: "Maintaining GCC",
   desc: [Some useful commands to maintain gcc globally.],
-  date: "2025-05-12",
+  date: "2025-05-15",
 )
 
 == List G++ Packages
