@@ -1,0 +1,16 @@
+[
+    {
+        "id": "1",
+        "articleId": "gcc",
+        "content": "Test",
+        "email": "Kamiya",
+        "createdAt": 1747694919222
+    },
+    {
+        "id": "2",
+        "articleId": "gcc",
+        "content": "Test 2",
+        "email": "Kamiya",
+        "createdAt": 1747694974919
+    }
+]
