@@ -3,6 +3,9 @@
   title: "Temperament",
   desc: [Some mathematics about temperament.],
   date: "2025-05-12",
+  tags: (
+    blog-tags.music-theory,
+  ),
 )
 
 == 五度相生律#footnote[#link("https://zh.wikipedia.org/wiki/%E4%BA%94%E5%BA%A6%E7%9B%B8%E7%94%9F%E5%BE%8B")[维基百科：五度相生律]]

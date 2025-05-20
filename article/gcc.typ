@@ -1,8 +1,13 @@
-#import "/typ/templates/blog.typ": main
+#import "/typ/templates/blog.typ": *
 #show: main.with(
   title: "Maintaining GCC",
   desc: [Some useful commands to maintain gcc globally.],
   date: "2025-05-12",
+  tags: (
+    blog-tags.programming,
+    blog-tags.linux,
+    blog-tags.dev-ops,
+  ),
 )
 
 == List G++ Packages

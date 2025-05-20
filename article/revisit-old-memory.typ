@@ -1,8 +1,12 @@
-#import "/typ/templates/blog.typ": main
+#import "/typ/templates/blog.typ": *
 #show: main.with(
   title: "Revisiting Old Memory",
   desc: [Revisit the songs that I listened.],
   date: "2025-05-17",
+  tags: (
+    blog-tags.music-theory,
+    blog-tags.misc,
+  ),
 )
 
 最近学习了一些乐理知识，逼着自己扒了一些歌的和弦。为了保证正确性，将一首歌的细节反反复复听，似乎也是练了一些走向、色彩和动机的感悟能力。
