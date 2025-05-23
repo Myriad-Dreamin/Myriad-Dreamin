@@ -25,4 +25,13 @@ Under "Setting > Pages", I add the custom domain `example.com` and verify the ow
 
 = Configuring the GitHub Pages
 
-In the GitHub repository settings, I change the custom domain to `www.example.com`. Then, goto the Cloudflare DNS settings and add a CNAME record for `www` pointing to `myriad-dreamin.github.io`. The blog finally should be accessible at `www.example.com`.
+In the GitHub repository settings, I change the custom domain to `www.example.com`. Then, goto the Cloudflare DNS settings and add a CNAME record for `www` pointing to `myriad-dreamin.github.io`. Noted that the record shouldn't be *"Proxied" but "DNS Only"*. Test that the nameservers are set correctly by running the following command:
+
+```bash
+λ dig www.example.com +nostats +nocomments +nocmd
+;www.example.com.                IN      A
+www.example.com. 300     IN      CNAME   myriad-dreamin.github.io.
+myriad-dreamin.github.io. 3600  IN      A       x.x.x.x
+```
+
+The blog finally should be accessible at `www.example.com`.
