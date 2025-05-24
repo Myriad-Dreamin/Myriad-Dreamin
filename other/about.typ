@@ -1,12 +1,12 @@
 
+// <em>Poe magie</em>
+
+Myriad-Dreamin puts down daily life, essays, and notes within _Poe magie._
+
+Myriad-Dreamin 在 _Poe magie_ 中记录生活中的日常、随笔与笔记。
+
 I'm a student. I make compilers and software in my spare time. I have a fictional character named raihamiya.
 
 我是一名学生。我在空余时间开发编译器和软件。我拥有一个名为「礼羽みや」的虚构角色。
 
-GitHub: https://github.com/Myriad-Dreamin
-
-Skeb: https://skeb.jp/@camiyoru
-
-Buy me a coffee on Unifans: https://app.unifans.io/c/camiyoru
-
-Buy me a coffee on Afdian: https://afdian.com/a/camiyoru
+#link("https://github.com/Myriad-Dreamin")[GitHub]/#link("https://skeb.jp/@camiyoru")[Skeb]. Buy me a coffee on #link("https://www.unifans.com/camiyoru")[Unifans]/#link("https://afdian.com/a/camiyoru")[Afdian].
