@@ -5,9 +5,7 @@
   desc: [Archive of Blog posts in May 2025],
   date: "2025-05-31",
   tags: (
-    blog-tags.programming,
-    blog-tags.software,
-    blog-tags.software-engineering,
+    archive-tags.blog-post,
   ),
 )
 
