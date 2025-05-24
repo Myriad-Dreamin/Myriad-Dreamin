@@ -10,40 +10,40 @@
   ),
 )
 
-== List G++ Packages
+= List G++ Packages
 
 ```bash
 sudo apt list "gcc-*" | grep -P "gcc-\d+\/"
 sudo apt list "g++-*" | grep -P "g++-\d+\/"
 ```
 
-== build-essential
+= build-essential
 
 ```bash
 sudo apt-get install build-essential
 ```
 
-== update-alternatives
+= update-alternatives
 
 ```bash
 sudo apt-get install update-alternatives
 ```
 
-== Using specific version of gcc
+= Using specific version of gcc
 
 ```bash
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 7
 sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 7
 ```
 
-== Checking versions of configured gcc
+= Checking versions of configured gcc
 
 ```bash
 sudo update-alternatives --config gcc
 sudo update-alternatives --config g++
 ```
 
-== GNU Toolchain Directory Layout
+= GNU Toolchain Directory Layout
 
 - `bin` - Executable files
 - `include` - Header files
