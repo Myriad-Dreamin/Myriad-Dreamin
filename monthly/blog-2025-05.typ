@@ -2,7 +2,7 @@
 
 #show: main.with(
   title: "Myriad Dreamin Blog 2025-05",
-  desc: [Blog 2025 05.],
+  desc: [Archive of Blog posts in May 2025],
   date: "2025-05-31",
   tags: (
     blog-tags.programming,
