@@ -37,13 +37,13 @@
     }
 
     .thumbnail {
-      --thumbnail-bg: var(--main-color);
-      --thumbnail-fg: transparent;
+      --thumbnail-fg: var(--main-color);
+      --thumbnail-bg: transparent;
     }
 
     .dark .thumbnail {
-      --thumbnail-fg: var(--main-color);
-      --thumbnail-bg: transparent;
+      --thumbnail-bg: var(--main-color);
+      --thumbnail-fg: transparent;
     }
 
     @media (max-width: 800px) {
@@ -95,7 +95,7 @@
                 "use",
                 attrs: (
                   "xlink:href": "/favicon.svg#thumbnail-bg" + str(i),
-                  style: "fill: var(--thumbnail-fg)",
+                  style: "fill: var(--thumbnail-bg)",
                 ),
               )
             }
@@ -104,7 +104,7 @@
                 "use",
                 attrs: (
                   "xlink:href": "/favicon.svg#thumbnail-fg" + str(i),
-                  style: "fill: var(--thumbnail-bg)",
+                  style: "fill: var(--thumbnail-fg)",
                 ),
               )
             }

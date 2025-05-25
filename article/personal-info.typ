@@ -8,6 +8,10 @@
   ),
 )
 
+= About Me
+
+#include "/content/other/about.typ"
+
 = 个人信息
 
 - 名字：Miya Reiha
@@ -19,7 +23,3 @@
 - Name：Miya Reiha
 - Birthday：12. 24
 - Year：14
-
-= About Me
-
-#include "/content/other/about.typ"
