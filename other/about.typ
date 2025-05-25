@@ -13,7 +13,6 @@
   #link("https://github.com/Myriad-Dreamin")[GitHub]/#link("https://skeb.jp/@camiyoru")[Skeb]. Buy me a coffee on #link("https://www.unifans.com/camiyoru")[Unifans]/#link("https://afdian.com/a/camiyoru")[Afdian].
 ]
 
-
 #if sys-is-html-target {
   {
     show raw: it => html.elem("style", it.text)
@@ -38,12 +37,12 @@
     }
 
     .thumbnail {
-      --thumbnail-bg: currentColor;
+      --thumbnail-bg: var(--main-color);
       --thumbnail-fg: transparent;
     }
 
     .dark .thumbnail {
-      --thumbnail-fg: currentColor;
+      --thumbnail-fg: var(--main-color);
       --thumbnail-bg: transparent;
     }
 
@@ -71,7 +70,9 @@
       div(self-desc)
       div(
         attrs: (
-          class: "thumbnail-container",
+          class: "thumbnail-container link",
+          title: "礼羽みや, artwork by ちょみます (@tyomimas)",
+          onclick: "location.href='/article/personal-info'",
         ),
         svg(
           attrs: (
@@ -80,7 +81,16 @@
             viewBox: "0 0 640 640",
           ),
           {
-            for i in range(13) {
+            let count-path() = {
+              let data = str(read("/public/favicon.svg"))
+              let fgs = regex("thumbnail-fg\d+")
+              let bgs = regex("thumbnail-bg\d+")
+              (data.matches(fgs).len(), data.matches(bgs).len())
+            }
+
+            let (fgs, bgs) = count-path()
+
+            for i in range(bgs) {
               html.elem(
                 "use",
                 attrs: (
@@ -89,7 +99,7 @@
                 ),
               )
             }
-            for i in range(7) {
+            for i in range(fgs) {
               html.elem(
                 "use",
                 attrs: (
