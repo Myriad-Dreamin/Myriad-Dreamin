@@ -1,12 +1,108 @@
 
-// <em>Poe magie</em>
+#import "/typ/templates/mod.typ": sys-is-html-target
 
-Myriad-Dreamin puts down daily life, essays, and notes within _Poe magie._
+#let self-desc = [
+  Myriad-Dreamin puts down daily life, essays, and notes within _Poe magie._
 
-Myriad-Dreamin 在 _Poe magie_ 中记录生活中的日常、随笔与笔记。
+  Myriad-Dreamin 在 _Poe magie_ 中记录生活中的日常、随笔与笔记。
 
-I'm a student. I make compilers and software in my spare time. I have a fictional character named raihamiya.
+  I'm a student. I make compilers and software in my spare time. I have a fictional character named raihamiya.
 
-我是一名学生。我在空余时间开发编译器和软件。我拥有一个名为「礼羽みや」的虚构角色。
+  我是一名学生。我在空余时间开发编译器和软件。我拥有一个名为「礼羽みや」的虚构角色。
 
-#link("https://github.com/Myriad-Dreamin")[GitHub]/#link("https://skeb.jp/@camiyoru")[Skeb]. Buy me a coffee on #link("https://www.unifans.com/camiyoru")[Unifans]/#link("https://afdian.com/a/camiyoru")[Afdian].
+  #link("https://github.com/Myriad-Dreamin")[GitHub]/#link("https://skeb.jp/@camiyoru")[Skeb]. Buy me a coffee on #link("https://www.unifans.com/camiyoru")[Unifans]/#link("https://afdian.com/a/camiyoru")[Afdian].
+]
+
+
+#if sys-is-html-target {
+  {
+    show raw: it => html.elem("style", it.text)
+    ```css
+    .self-desc {
+      display: flex;
+      flex-direction: row;
+      gap: 4em;
+      margin-block-start: -1em;
+    }
+
+    .self-desc .thumbnail-container {
+      flex: 0 0 22em;
+      border-radius: 0.5em;
+      overflow: hidden;
+    }
+
+    .self-desc .thumbnail-container,
+    .self-desc .thumbnail {
+      width: 22em;
+      height: 22em;
+    }
+
+    .thumbnail {
+      --thumbnail-bg: currentColor;
+      --thumbnail-fg: transparent;
+    }
+
+    .dark .thumbnail {
+      --thumbnail-fg: currentColor;
+      --thumbnail-bg: transparent;
+    }
+
+    @media (max-width: 800px) {
+      .self-desc {
+        flex-direction: column;
+        align-items: center;
+      }
+      .self-desc .thumbnail-container,
+      .self-desc .thumbnail, {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    ```
+  }
+
+  let div = html.elem.with("div")
+  let svg = html.elem.with("svg")
+  div(
+    attrs: (
+      class: "self-desc",
+    ),
+    {
+      div(self-desc)
+      div(
+        attrs: (
+          class: "thumbnail-container",
+        ),
+        svg(
+          attrs: (
+            class: "thumbnail",
+            xmlns: "http://www.w3.org/2000/svg",
+            viewBox: "0 0 640 640",
+          ),
+          {
+            for i in range(13) {
+              html.elem(
+                "use",
+                attrs: (
+                  "xlink:href": "/favicon.svg#thumbnail-bg" + str(i),
+                  style: "fill: var(--thumbnail-fg)",
+                ),
+              )
+            }
+            for i in range(7) {
+              html.elem(
+                "use",
+                attrs: (
+                  "xlink:href": "/favicon.svg#thumbnail-fg" + str(i),
+                  style: "fill: var(--thumbnail-bg)",
+                ),
+              )
+            }
+          },
+        ),
+      )
+    },
+  )
+} else {
+  self-desc
+}
