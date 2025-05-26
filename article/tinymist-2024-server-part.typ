@@ -6,8 +6,11 @@
   date: "2025-05-23",
   tags: (
     blog-tags.programming,
+    blog-tags.tinymist,
     blog-tags.software,
     blog-tags.software-engineering,
+    blog-tags.compiler,
+    blog-tags.typst,
   ),
 )
 

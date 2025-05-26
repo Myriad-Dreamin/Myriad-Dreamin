@@ -7,6 +7,14 @@
   tags: (
     archive-tags.blog-post,
   ),
+  archive-indices: (
+    "temperament",
+    "gcc",
+    "revisit-old-memory",
+    "shr",
+    "domain-setup",
+    "tinymist-2024-server-part",
+  ),
 )
 
 #include "/content/article/temperament.typ"
