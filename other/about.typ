@@ -1,6 +1,8 @@
 
 #import "/typ/templates/mod.typ": sys-is-html-target
 
+#let is-external = state("about:is-external", false)
+
 #let self-desc = [
   Myriad Dreamin puts down daily life, essays, and notes within _PoeMagie._
 
@@ -62,54 +64,61 @@
 
   let div = html.elem.with("div")
   let svg = html.elem.with("svg")
+
+  let artwork = svg(
+    attrs: (
+      class: "thumbnail",
+      xmlns: "http://www.w3.org/2000/svg",
+      viewBox: "0 0 640 640",
+    ),
+    {
+      let count-path() = {
+        let data = str(read("/public/favicon.svg"))
+        let fgs = regex("thumbnail-fg\d+")
+        let bgs = regex("thumbnail-bg\d+")
+        (data.matches(fgs).len(), data.matches(bgs).len())
+      }
+
+      let (fgs, bgs) = count-path()
+
+      for i in range(bgs) {
+        html.elem(
+          "use",
+          attrs: (
+            "xlink:href": "/favicon.svg#thumbnail-bg" + str(i),
+            style: "fill: var(--thumbnail-bg)",
+          ),
+        )
+      }
+      for i in range(fgs) {
+        html.elem(
+          "use",
+          attrs: (
+            "xlink:href": "/favicon.svg#thumbnail-fg" + str(i),
+            style: "fill: var(--thumbnail-fg)",
+          ),
+        )
+      }
+    },
+  )
+
   div(
     attrs: (
       class: "self-desc",
     ),
     {
       div(self-desc)
-      div(
+      context div(
         attrs: (
           class: "thumbnail-container link",
           title: "礼羽みや, artwork by ちょみます (@tyomimas)",
-          onclick: "location.href='/article/personal-info'",
-        ),
-        svg(
-          attrs: (
-            class: "thumbnail",
-            xmlns: "http://www.w3.org/2000/svg",
-            viewBox: "0 0 640 640",
-          ),
-          {
-            let count-path() = {
-              let data = str(read("/public/favicon.svg"))
-              let fgs = regex("thumbnail-fg\d+")
-              let bgs = regex("thumbnail-bg\d+")
-              (data.matches(fgs).len(), data.matches(bgs).len())
-            }
-
-            let (fgs, bgs) = count-path()
-
-            for i in range(bgs) {
-              html.elem(
-                "use",
-                attrs: (
-                  "xlink:href": "/favicon.svg#thumbnail-bg" + str(i),
-                  style: "fill: var(--thumbnail-bg)",
-                ),
-              )
-            }
-            for i in range(fgs) {
-              html.elem(
-                "use",
-                attrs: (
-                  "xlink:href": "/favicon.svg#thumbnail-fg" + str(i),
-                  style: "fill: var(--thumbnail-fg)",
-                ),
-              )
-            }
+          onclick: if is-external.get() {
+            "location.href='https://www.myriad-dreamin.com/article/personal-info'"
+          } else {
+            "location.href='/article/personal-info'"
           },
         ),
+        artwork,
       )
     },
   )
