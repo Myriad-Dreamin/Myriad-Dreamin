@@ -2,9 +2,9 @@
 #import "/typ/templates/mod.typ": sys-is-html-target
 
 #let self-desc = [
-  Myriad-Dreamin puts down daily life, essays, and notes within _Poe magie._
+  Myriad-Dreamin puts down daily life, essays, and notes within _PoeMagie._
 
-  Myriad-Dreamin 在 _Poe magie_ 中记录生活中的日常、随笔与笔记。
+  Myriad-Dreamin 在 _PoeMagie_ 中记录生活中的日常、随笔与笔记。
 
   I'm a student. I make compilers and software in my spare time. I have a fictional character named raihamiya.
 
