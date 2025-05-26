@@ -52,7 +52,7 @@
         align-items: center;
       }
       .self-desc .thumbnail-container,
-      .self-desc .thumbnail, {
+      .self-desc .thumbnail {
         width: 100%;
         height: 100%;
       }
