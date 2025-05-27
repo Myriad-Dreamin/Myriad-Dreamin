@@ -16,20 +16,3 @@
     "tinymist-2024-server-part",
   ),
 )
-
-#include "/content/article/temperament.typ"
-#pagebreak(weak: true)
-
-#include "/content/article/gcc.typ"
-#pagebreak(weak: true)
-
-#include "/content/article/revisit-old-memory.typ"
-#pagebreak(weak: true)
-
-#include "/content/article/shr.typ"
-#pagebreak(weak: true)
-
-#include "/content/article/domain-setup.typ"
-#pagebreak(weak: true)
-
-#include "/content/article/tinymist-2024-server-part.typ"

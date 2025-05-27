@@ -17,5 +17,3 @@
     "tinymist-2024-server-part",
   ),
 )
-
-#include "/content/article/tinymist-2024-server-part.typ"
