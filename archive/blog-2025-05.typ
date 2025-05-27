@@ -8,11 +8,11 @@
     archive-tags.blog-post,
   ),
   archive-indices: (
-    "temperament",
-    "gcc",
-    "revisit-old-memory",
-    "shr",
-    "domain-setup",
-    "tinymist-2024-server-part",
+    articles.temperament,
+    articles.gcc,
+    articles.revisit-old-memory,
+    articles.shr,
+    articles.domain-setup,
+    articles.tinymist-2024-server-part,
   ),
 )
