@@ -11,9 +11,11 @@
 
 = Raw Blocks
 
-This is a inline raw block `class T`.
+This is an inline raw block `class T`.
 
-This is a inline raw block ```js class T```.
+This is an inline raw block ```js class T```.
+
+This is a long inline raw block ```js class T {}; class T {}; class T {}; class T {}; class T {}; class T {}; class T {}; class T {}; class T {};```.
 
 Js syntax highlight are handled by syntect:
 
