@@ -19,6 +19,6 @@
 
 #show "PoeMagie": link.with("https://www.myriad-dreamin.com")
 
-#import "blog/other/about.typ": is-external
+#import "about.typ": is-external
 #is-external.update(true)
-#include "blog/other/about.typ"
+#include "about.typ"
